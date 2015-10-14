@@ -1,1 +1,18 @@
-Welcome to Wine Index (templates/wines-index.html)
+<h1 class="jumbotron">wine.ly</h1>
+
+
+<h3>{{hello}}</h3>
+
+<div class="listicle" ng-repeat="wine in wines">
+  <h5><a href="/wines/{{wine.id}}">{{wine.name}}</a></h5>
+<img src="{{wine.picture}}"> <br>
+Year: {{wine.year}} <br>
+Grape(s): {{wine.grapes}} <br>
+Country: {{wine.country}} <br>
+Region: {{wine.region}} <br>
+Price: ${{wine.price}} <br>
+Description: {{wine.description}}
+<hr>
+</div>
+
+
